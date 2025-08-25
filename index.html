@@ -1,100 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Livraria Central</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-    }
-
-    header {
-      background: #3e4a61;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background: #2c3445;
-      text-align: center;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .container {
-      padding: 20px;
-    }
-
-    .livro {
-      background: white;
-      padding: 15px;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-    }
-
-    .livro h3 {
-      margin: 0;
-    }
-
-    footer {
-      background: #3e4a61;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Livraria Central</h1>
-    <p>Os melhores livros em um só lugar</p>
+    <h1>Livraria Online</h1>
+    <img src="img/Logo.png" alt="Livro 1" height="300" width="300" />
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Livros</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="barra-pesquisa">
+      <input type="text" placeholder="Pesquisar livros..." />
+      <button>🔍</button>
+    </div>
   </header>
 
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Categorias</a>
-    <a href="#">Contato</a>
-  </nav>
+  <main>
+    <aside class="categorias">
+      <h3>Categorias</h3>
+      <ul>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Ficção</a></li>
+        <li><a href="#">Aventura</a></li>
+        <li><a href="#">Biografia</a></li>
+        <li><a href="#">Terror</a></li>
+        <li><a href="#">Fantasia</a></li>
+      </ul>
+    </aside>
 
-  <div class="container">
-    <div class="livro">
-      <h3>O Senhor dos Anéis</h3>
-      <p>Autor: J.R.R. Tolkien</p>
-      <p>Preço: R$ 89,90</p>
-    </div>
+    <section class="livros">
+      <div class="livro">
+        <img src="img/Logo.png" alt="Livro 1" height="300" width="300" />
+        <h2>Título do Livro 1</h2>
+        <p>Autor: Fulano de Tal</p>
+        <button>Ver mais</button>
+      </div>
 
-    <div class="livro">
-      <h3>Dom Casmurro</h3>
-      <p>Autor: Machado de Assis</p>
-      <p>Preço: R$ 39,90</p>
-    </div>
+      <div class="livro">
+        <img src="img/Logo.png" alt="Livro 2" />
+        <h2>Título do Livro 2</h2>
+        <p>Autor: Ciclano da Silva</p>
+        <button>Ver mais</button>
+      </div>
 
-    <div class="livro">
-      <h3>1984</h3>
-      <p>Autor: George Orwell</p>
-      <p>Preço: R$ 49,90</p>
-    </div>
-  </div>
+      <div class="livro">
+        <img src="img/Logo.png" alt="Livro 3" />
+        <h2>Título do Livro 3</h2>
+        <p>Autor: Beltrano Souza</p>
+        <button>Ver mais</button>
+      </div>
+
+      <!-- Adicione mais livros conforme quiser -->
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Livraria Central. Todos os direitos reservados.
+    <p>&copy; 2025 Livraria Central. Todos os direitos reservados.</p>
   </footer>
-
+  
 </body>
 </html>

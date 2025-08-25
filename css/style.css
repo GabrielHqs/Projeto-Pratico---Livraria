@@ -1,0 +1,70 @@
+/* Adiciona a barra de pesquisa */
+.barra-pesquisa {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barra-pesquisa input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.barra-pesquisa button {
+  padding: 10px 15px;
+  background-color: #ffffff33;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.barra-pesquisa button:hover {
+  background-color: #ffffff55;
+}
+
+/* Layout principal com sidebar */
+main {
+  display: flex;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+/* Categorias (sidebar) */
+.categorias {
+  width: 200px;
+}
+
+.categorias h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.categorias ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.categorias li {
+  margin-bottom: 10px;
+}
+
+.categorias a {
+  text-decoration: none;
+  color: #6200ea;
+}
+
+.categorias a:hover {
+  text-decoration: underline;
+}
+
+/* Livros (grade de produtos) */
+.livros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex: 1;
+}
