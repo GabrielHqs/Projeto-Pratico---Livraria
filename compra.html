@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finalizar Compra</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+  <div class="container form-contato">
+    <h2>Finalizar Compra</h2>
+    <p>Você está comprando: <strong id="livro-nome">Livro</strong></p>
+
+    <form>
+      <div class="mb-3">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" class="form-control" required />
+      </div>
+      <button type="submit" class="btn btn-warning">Confirmar Compra</button>
+    </form>
+  </div>
+
+  <script>
+    // Captura o parâmetro da URL e exibe o nome do livro
+    const params = new URLSearchParams(window.location.search);
+    const livro = params.get("livro");
+    const nomes = {
+      "harry-potter": "Harry Potter e a Pedra Filosofal",
+      "o-hobbit": "O Hobbit",
+      "sociedade-do-anel": "O Senhor dos Anéis: A Sociedade do Anel",
+      "dom-casmurro": "Dom Casmurro",
+      "gatsby": "O Grande Gatsby",
+      "1984": "1984"
+    };
+    document.getElementById("livro-nome").textContent = nomes[livro] || "Livro";
+  </script>
+</body>
+</html>

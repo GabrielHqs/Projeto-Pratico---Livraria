@@ -15,7 +15,7 @@
 
 <body>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="home">
     <div class="navbar-container">
       <nav>
         <a href="a">
@@ -23,24 +23,26 @@
         </a>
         <ul class="navbar-i">
           <li>
-            <a href="a">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="a">Categorias</a>
+            <a href="/Livraria/contato.htm" class="contato">Contato</a>
           </li>
           <li>
-            <a href="a" class="btn-entrar">Entrar</a>
+            <a href="/Livraria/login/index.htm" class="btn-entrar">Entrar</a>
           </li>
 
         </ul>
       </nav>
     </div>
     <main>
-      <div class="banner">
+      <section class="home" id="home">
+         <div class="banner">
         <h1>Livraria Central</h1>
         <p>Explore novos mundos</p>
       </div>
-
+      </section>
+    
       <!-- Livros -->
 
       <section class="books-container">
@@ -50,7 +52,8 @@
             <div class="card-body">
               <h5 class="card-title">Harry Potter e a Pedra Filosofal</h5>
               <p class="card-text">J.K. Rowling (1997).</p>
-              <a href="#" class="btn btn-primary">R$ 30.00</a>
+              <a href="compra.html?livro=harry-potter" class="btn btn-primary">R$ 30.00</a>
+
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -58,7 +61,8 @@
             <div class="card-body">
               <h5 class="card-title">O Hobbit</h5>
               <p class="card-text">J.R.R. Tolkien (1937).</p>
-              <a href="#" class="btn btn-primary">R$ 30.00</a>
+              <a href="compra.html?livro=o-hobbit" class="btn btn-primary">R$ 30.00</a>
+
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -66,7 +70,7 @@
             <div class="card-body">
               <h5 class="card-title">O Senhor dos Anéis: A Sociedade do Anel</h5>
               <p class="card-text">J.R.R. Tolkien (1954).</p>
-              <a href="#" class="btn btn-primary">R$ 30.00</a>
+              <a href="compra.html?livro=sociedade-do-anel" class="btn btn-primary">R$ 30.00</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -74,7 +78,7 @@
             <div class="card-body">
               <h5 class="card-title">Dom Casmurro</h5>
               <p class="card-text">Machado de Assis (1899).</p>
-              <a href="#" class="btn btn-primary">R$ 30.00</a>
+              <a href="compra.html?livro=dom-casmurro" class="btn btn-primary">R$ 30.00</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -82,7 +86,7 @@
             <div class="card-body">
               <h5 class="card-title">O Grande Gatsby</h5>
               <p class="card-text">F. Scott Fitzgerald (1925).</p>
-              <a href="#" class="btn btn-primary">R$ 30.00</a>
+              <a href="compra.html?livro=gatsby" class="btn btn-primary">R$ 30.00</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -90,31 +94,11 @@
             <div class="card-body">
               <h5 class="card-title">1984</h5>
               <p class="card-text">George Orwell (1949).</p>
-              <a href="#" class="btn btn-primary">R$ 30.00</a>
+              <a href="compra.html?livro=1984" class="btn btn-primary">R$ 30.00</a>
             </div>
           </div>
         </ul>
       </section>
-
-      <section class="form-contato">
-        <h2>Fale conosco</h2>
-        <form action="contato" method="POST">
-          <div class="mb-3">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required class="form-control"></textarea>
-          </div>
-          <button type="submit" class="btn btn-warning">Enviar</button>
-        </form>
-      </section>
-
     </main>
   </div>
   
