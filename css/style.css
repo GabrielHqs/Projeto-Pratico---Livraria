@@ -93,14 +93,15 @@ nav {
 /* Livros - Catalogo */
 
 .books-container {
-  padding: 5rem 0;
+  padding: 3rem 5%;
 }
 
 .books-container ul {
-  display:flex;
-  gap: 2rem; /* espaço entre os cards */
-  width: 90%;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  list-style: none;
 }
 
 .books-container2 {
@@ -273,3 +274,4 @@ label {
   border-radius: 4px;
   margin-right: 5px;
 }
+

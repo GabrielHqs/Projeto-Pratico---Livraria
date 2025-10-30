@@ -4,178 +4,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Livraria Central</title>
+  <title>Livraria Central - Catálogo</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css" />
-
 </head>
 
 <body>
-
-
-  <div class="container-fluid" id="home">
-    <div class="navbar-container">
-      <nav>
-        <a href="a">
-          <img src="img/Logo.png" alt="Livraria Central" class="logo">
-        </a>
-        <ul class="navbar-i">
-          <li>
-            <a href="/index.html">Home</a>
-          </li>
-          <li>
-            <a href="/Catalogo.html" class="btn-catlg">Catálogo</a>
-          </li>
-          <li>
-            <a href="/contato.htm" class="contato">Contato</a>
-          </li>
-          <li>
-            <a href="/login/index.htm" class="btn-entrar">Entrar</a>
-          </li>
-
-
-        </ul>
-      </nav>
-    </div>
-    <div class="barra-topo">
-      <div class="categorias">
-        <a href="#">Ficção</a>
-        <a href="#">Clássicos</a>
-        <a href="#">Fantasia</a>
-        <a href="#">Suspense</a>
-        <a href="#">Biografias</a>
-      </div>
-
-      <div class="pesquisa">
-        <form action="#" method="get">
-          <input type="text" placeholder="Buscar livro..." name="q">
-          <button type="submit">🔍</button>
-        </form>
-      </div>
-    </div>
-
-    <section class="books-container">
-      <ul>
-        <div class="card" style="width: 18rem;">
-          <img src="img/Harry01english.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Harry Potter e a Pedra Filosofal</h5>
-            <p class="card-text">J.K. Rowling (1997).</p>
-            <a href="#" class="btn btn-primary">R$ 30.00</a>
-
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/O Hobbit.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">O Hobbit</h5>
-            <p class="card-text">J.R.R. Tolkien (1937).</p>
-            <a href="#" class="btn btn-primary">R$ 30.00</a>
-
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/O Senhor dos Anéis A Sociedade do Anel.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">O Senhor dos Anéis: A Sociedade do Anel</h5>
-            <p class="card-text">J.R.R. Tolkien (1954).</p>
-            <a href="#" class="btn btn-primary">R$ 30.00</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/DOM CASMURRO - 1899.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dom Casmurro</h5>
-            <p class="card-text">Machado de Assis (1899).</p>
-            <a href="#" class="btn btn-primary">R$ 30.00</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/O grande Gatsby.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">O Grande Gatsby</h5>
-            <p class="card-text">F. Scott Fitzgerald (1925).</p>
-            <a href="#" class="btn btn-primary">R$ 30.00</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/1984.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">1984</h5>
-            <p class="card-text">George Orwell (1949).</p>
-            <a href="#" class="btn btn-primary">R$ 30.00</a>
-          </div>
-        </div>
+  <!-- Navbar -->
+  <div class="navbar-container">
+    <nav>
+      <a href="#">
+        <img src="img/Logo.png" alt="Livraria Central" class="logo">
+      </a>
+      <ul class="navbar-i">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/catalogo.html" class="btn-catlg">Catálogo</a></li>
+        <li><a href="/contato.html" class="contato">Contato</a></li>
+        <li><a href="/login/index.html" class="btn-entrar">Entrar</a></li>
+        <li><a href="/carrinho.html"><i class="bi bi-cart"></i> Carrinho</a></li>
       </ul>
-    </section>
-
-<!--  -->
-
-    <section class="books-container2">
-      <ul>
-        <div class="card" style="width: 18rem;">
-          <img src="img/Duna.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Duna: livro 1</h5>
-            <p class="card-text">Frank Herbert (1965).</p>
-            <a href="#" class="btn btn-primary">R$ 30.00</a>
-
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/Fundaçao.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Fundação: 1</h5>
-            <p class="card-text">Isaac Asimov (1951).</p>
-            <a href="#" class="btn btn-primary">R$ 20.00</a>
-
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/O Iluminado.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">O iluminado </h5>
-            <p class="card-text">Stephen King (1980).</p>
-            <a href="#" class="btn btn-primary">R$ 50.00</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/MestradasAsrmas.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">O Mestre das Armas </h5>
-            <p class="card-text"> Xavier Dorison.</p>
-            <a href="#" class="btn btn-primary">R$ 39.99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/Superman.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Superman: paz na Terra</h5>
-            <p class="card-text">Paul Dini.</p>
-            <a href="#" class="btn btn-primary">R$ 20.90</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="img/StarWars.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Star Wars: Irmandade</h5>
-            <p class="card-text">Mike ChenMike Chen.</p>
-            <a href="#" class="btn btn-primary">R$ 29.90</a>
-          </div>
-        </div>
-      </ul>
-    </section>
-    </main>
+    </nav>
   </div>
 
+  <!-- Barra superior -->
+  <div class="barra-topo">
+    <div class="categorias">
+      <a href="#" data-categoria="todas">Todas</a>
+      <a href="#" data-categoria="ficcao">Ficção</a>
+      <a href="#" data-categoria="classicos">Clássicos</a>
+      <a href="#" data-categoria="fantasia">Fantasia</a>
+      <a href="#" data-categoria="suspense">Suspense</a>
+      <a href="#" data-categoria="biografias">Biografias</a>
+    </div>
+
+    <div class="pesquisa">
+      <input type="text" id="busca" placeholder="Buscar livro...">
+    </div>
+
+    <div class="ordenar">
+      <select id="ordenar" class="form-select form-select-sm">
+        <option value="titulo">Título (A-Z)</option>
+        <option value="preco">Preço (menor → maior)</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Lista de livros -->
+  <main class="books-container">
+    <ul id="lista-livros" class="d-flex flex-wrap justify-content-center gap-3 mt-4"></ul>
+  </main>
+
+  <!-- Rodapé -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-info">
         <h4>Livraria Central</h4>
         <p>Desde 2025 conectando leitores aos melhores mundos literários.</p>
-         <p><i class="bi bi-geo-alt"></i> Guarapuava, PR</p>
-      <p><i class="bi bi-envelope-fill"></i> contato@livrariacentral.com</p>
+        <p><i class="bi bi-geo-alt"></i> Guarapuava, PR</p>
+        <p><i class="bi bi-envelope-fill"></i> contato@livrariacentral.com</p>
       </div>
 
       <div class="footer-social">
@@ -184,12 +72,15 @@
         <a href="#"><i class="bi bi-instagram"></i></a>
         <a href="#"><i class="bi bi-twitter-x"></i></a>
       </div>
+    </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2025 Livraria Central. Todos os direitos reservados.</p>
-      </div>
+    <div class="footer-bottom text-center mt-3">
+      <p>&copy; 2025 Livraria Central. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
+  <script src="js/catalogo.js"></script>
+  <script src="js/carrinho.js"></script>
 </body>
 
 </html>
