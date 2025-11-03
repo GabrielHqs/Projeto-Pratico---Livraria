@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".add-cart");
 
-  buttons.forEach(button => {
+  buttons.forEach((button) => {
     button.addEventListener("click", (event) => {
       event.preventDefault();
 
@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function addToCart(book) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  
+
   // Verifica se o livro já está no carrinho
-  const existing = cart.find(item => item.title === book.title);
+  const existing = cart.find((item) => item.title === book.title);
 
   if (existing) {
     alert("📚 Este livro já está no carrinho!");

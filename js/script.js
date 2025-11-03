@@ -1,9 +1,9 @@
 // Efeito de rolagem suave
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
     });
   });
 });
@@ -14,14 +14,14 @@ window.addEventListener("scroll", () => {
   const navLinks = document.querySelectorAll("nav a");
   let current = "";
 
-  sections.forEach(section => {
+  sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     if (scrollY >= sectionTop - 100) {
       current = section.getAttribute("id");
     }
   });
 
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.classList.remove("active");
     if (link.getAttribute("href").includes(current)) {
       link.classList.add("active");
@@ -47,7 +47,7 @@ if (bannerText) {
 
 // Animação nos cards
 const cards = document.querySelectorAll(".card");
-cards.forEach(card => {
+cards.forEach((card) => {
   card.addEventListener("mouseenter", () => {
     card.style.transform = "scale(1.05)";
     card.style.transition = "transform 0.3s ease, box-shadow 0.3s ease";
@@ -60,17 +60,17 @@ cards.forEach(card => {
 });
 
 // Animação ao rolar
-const faders = document.querySelectorAll('.fade-in');
+const faders = document.querySelectorAll(".fade-in");
 const appearOptions = { threshold: 0.2 };
 
 const appearOnScroll = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
-    entry.target.classList.add('visible');
+    entry.target.classList.add("visible");
     observer.unobserve(entry.target);
   });
 }, appearOptions);
 
-faders.forEach(fader => {
+faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });

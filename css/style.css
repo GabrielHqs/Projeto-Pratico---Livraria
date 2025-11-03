@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial;
-  box-sizing:border-box;
+  box-sizing: border-box;
 
 }
 
@@ -18,7 +18,7 @@ body {
 .vnd-container {
   margin: 11px;
   font-family: Arial;
-  box-sizing:border-box;
+  box-sizing: border-box;
   font-weight: bold;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -53,7 +53,7 @@ nav {
 }
 
 .navbar-i li {
-  display:inline-block;
+  display: inline-block;
   margin-left: 25px;
 
 }
@@ -65,7 +65,7 @@ nav {
 }
 
 .navbar-i a:hover {
-  color:bisque;
+  color: bisque;
 }
 
 .btn-entrar {
@@ -83,8 +83,9 @@ nav {
   background-size: cover;
 }
 
-.banner h1, .banner p {
-  color:#fff;
+.banner h1,
+.banner p {
+  color: #fff;
   text-align: center;
   font-weight: bold;
 }
@@ -109,8 +110,9 @@ nav {
 }
 
 .books-container2 ul {
-  display:flex;
-  gap: 2rem; /* espaço entre os cards */
+  display: flex;
+  gap: 2rem;
+  /* espaço entre os cards */
   width: 90%;
   margin: 0 auto;
 }
@@ -232,6 +234,7 @@ label {
 .btn-warning:hover {
   background-color: #ec971f;
 }
+
 /* Rodapé */
 
 .footer {
@@ -248,7 +251,9 @@ label {
   gap: 2rem;
 }
 
-.footer-info, .footer-social, .footer-newsletter {
+.footer-info,
+.footer-social,
+.footer-newsletter {
   flex: 1;
   min-width: 200px;
 }
@@ -274,4 +279,3 @@ label {
   border-radius: 4px;
   margin-right: 5px;
 }
-

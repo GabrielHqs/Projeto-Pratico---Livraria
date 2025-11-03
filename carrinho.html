@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Carrinho - Livraria Central</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <div class="container my-5">
@@ -30,17 +32,26 @@
 
       cart.forEach((item, index) => {
         container.innerHTML += `
-          <div class="col-md-4">
-            <div class="card">
-              <img src="${item.img}" class="card-img-top" style="height: 250px; object-fit: cover;">
-              <div class="card-body text-center">
-                <h5>${item.title}</h5>
-                <p>💲 R$ ${item.price}</p>
-                <button class="btn btn-danger btn-sm" onclick="removeItem(${index})">Remover</button>
-              </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="${item.img}" class="card-img-top" style="height: 250px; object-fit: cover;">
+            <div class="card-body text-center">
+              <h5>${item.title}</h5>
+              <p>💲 R$ ${item.price}</p>
+              <button class="btn btn-danger btn-sm remove-item-btn" data-index="${index}">Remover</button>
             </div>
           </div>
-        `;
+        </div>
+      `;
+      });
+
+      const removeButtons = document.querySelectorAll(".remove-item-btn");
+      removeButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+          event.preventDefault();
+          const index = parseInt(button.getAttribute("data-index"));
+          removeItem(index);
+        });
       });
     }
 
@@ -57,18 +68,24 @@
       }
       alert("🎉 Compra finalizada com sucesso!");
       localStorage.removeItem("cart");
+      cart = [];
       renderCart();
     });
 
     document.getElementById("limpar").addEventListener("click", () => {
       if (confirm("Tem certeza que deseja esvaziar o carrinho?")) {
         localStorage.removeItem("cart");
+        // Atualiza a variável 'cart' e redesenha
+        cart = [];
         renderCart();
       }
     });
 
     renderCart();
   </script>
+  <script src="/login/auth.js"></script>
+  <script>verificarLogin();</script>
 
 </body>
+
 </html>
