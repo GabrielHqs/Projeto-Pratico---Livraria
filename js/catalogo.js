@@ -142,7 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const price = button.getAttribute("data-price");
         const img = button.getAttribute("data-img");
 
-        // Chama a função global addToCart (que deve ser definida em Carrinho.js)
         if (typeof addToCart === "function") {
           addToCart({ title, price, img });
         } else {
